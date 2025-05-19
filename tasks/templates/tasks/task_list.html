@@ -1,0 +1,13 @@
+
+
+{% extends 'tasks/base.html' %}
+{% block content %}
+    <a class="btn btn-primary mb-3" href="{% url 'task-create' %}">+ Add Task</a>
+    <ul class="list-group">
+        {% for task in tasks %}
+        <li class="list-group-item">
+            {{ task.title }} — {% if task.complete %}✅{% else %}❌{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
