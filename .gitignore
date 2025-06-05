@@ -1,14 +1,19 @@
-# Ignore Python cache files
+# Python cache files
 __pycache__/
 *.py[cod]
+*.so
+
+# Database
 db.sqlite3
+
+# Environment variables
 .env
 
-# Ignore SQLite database
-db.sqlite3
+# Django migrations cache
+*/migrations/__pycache__/
 
-# Ignore environment and logs
-.env
-*.log
+# VSCode settings (optional)
+.vscode/
 
-
+# Mac system files (optional)
+.DS_Store
